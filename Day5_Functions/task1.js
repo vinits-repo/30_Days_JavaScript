@@ -7,6 +7,8 @@ readline.question("Enter a num to check even or add: ", (num) => {
   num = parseInt(num);
   readline.close();
 
+
+  
   evenOrOdd(num);
 
   function evenOrOdd(num) {
