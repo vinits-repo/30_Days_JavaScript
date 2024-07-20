@@ -1,7 +1,7 @@
 let book = {
   title: "Bhagwat Geeta",
   author: "Shri Krishna",
-  year: "7000 years ago",
+  year: "5000 years ago",
 };
 
 for (let key in book) {
