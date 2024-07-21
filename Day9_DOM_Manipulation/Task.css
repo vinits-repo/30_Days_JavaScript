@@ -1,0 +1,16 @@
+body{
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+}
+.first-div{
+    padding: 16px;
+}
+button{
+    padding: 12px;
+    border-radius: 12px;
+}
+#task10{
+    border: 2px solid white;
+    padding: 16px;
+}
