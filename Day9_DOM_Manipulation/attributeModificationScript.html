@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute Modification Script</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      a {
+        color: white;
+      }
+      button {
+        padding: 1rem;
+        border-radius: 2rem;
+        margin-top: 1rem;
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <a id="aTag" href="https://x.com/Vinitstwt" target="_blank"
+      >Visit My twitter Account</a
+    >
+    <br />
+    <button id="btn">Click me to change the above link to GitHub</button>
+  </body>
+  <script>
+    const aTag = document.getElementById("aTag");
+    document.getElementById("btn").addEventListener("click", () => {
+      aTag.href = "https://github.com/vinits-repo";
+      aTag.textContent = "Visit my GitHub"
+    });
+  </script>
+</html>

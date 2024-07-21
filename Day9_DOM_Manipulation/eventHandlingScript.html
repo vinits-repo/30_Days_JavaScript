@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Handling Script</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        font-size: 2.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      button {
+        padding: 1rem;
+        border-radius: 2rem;
+        margin-top: 1rem;
+        font-size: 1.5rem;
+      }
+      p {
+        border: 2px solid white;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="newPara">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+      aspernatur quos.
+    </p>
+    <button id="btn1">Click to change the text of Para</button>
+    <button id="btn2">
+      Hover the button to change the color of border of above para
+    </button>
+  </body>
+  <script>
+    const newPara = document.getElementById("newPara");
+    document.getElementById("btn1").addEventListener("click", () => {
+      newPara.textContent = "New text after clicking the button";
+    });
+    document.getElementById("btn2").addEventListener("mouseenter", () => {
+      newPara.style.borderColor = "purple";
+    });
+    document.getElementById("btn2").addEventListener("mouseleave", () => {
+      newPara.style.borderColor = "white";
+    });
+  </script>
+</html>
