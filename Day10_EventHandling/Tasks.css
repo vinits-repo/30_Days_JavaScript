@@ -1,0 +1,42 @@
+body {
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+}
+
+#btn1,
+#btn2 {
+  font-size: 1.5rem;
+}
+
+#hoverDiv {
+  padding: 1rem;
+  border: 2px solid white;
+  margin-top: 1rem;
+}
+
+#keyInput {
+  font-size: 2rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+#task6 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  border-radius: 8px;
+}
+
+#para{
+  padding: 1rem;
+}
+
+input[name="username"], #submit {
+  font-size: 2rem;
+}
+
+#selectValue, #change{
+  margin-top: 2rem;
+  padding: 1rem;
+  font-size: 2rem;
+}
