@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Event Script</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      #change {
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <select name="changeTask" id="change">
+      <option value="First Sentence">First Sentence</option>
+      <option value="Second Sentence">Second Sentence</option>
+      <option value="Third Sentence">Third Sentence</option>
+    </select>
+    <p id="selectValue">Select above option to display here.</p>
+  </body>
+  <script>
+    const change = document.getElementById("change");
+    const paraSelect = document.getElementById("selectValue");
+    change.addEventListener("change", () => {
+      paraSelect.textContent = change.value;
+    });
+  </script>
+</html>
