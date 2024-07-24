@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Delegation Script</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      button {
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="list">
+      <li id="js">JavaScript</li>
+      <li id="py">Python</li>
+      <li id="swift">Swift</li>
+      <li id="kt">Kotlin</li>
+    </ul>
+
+    <div id="parent"></div>
+    <button id="addChild">Add Child Element</button>
+  </body>
+  <script>
+    document.getElementById("list").addEventListener("click", (e) => {
+      if (e.target.tagName === "LI") {
+        console.log(e.target.textContent);
+      }
+    });
+
+    const parent = document.getElementById("parent");
+    const addChildBtn = document.getElementById("addChild");
+
+    parent.addEventListener("click", (e) => {
+      if (e.target && e.target.className === "child") {
+        alert("Child element clicked!");
+      }
+    });
+
+    addChildBtn.addEventListener("click", () => {
+      const newChild = document.createElement("div");
+      newChild.className = "child";
+      newChild.textContent = "New Child";
+      parent.appendChild(newChild);
+    });
+  </script>
+</html>

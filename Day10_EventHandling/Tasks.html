@@ -1,38 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Event Handling</title>
-    <link rel="stylesheet" href="Tasks.css">
-</head>
-<body>
-    <p id="task1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, incidunt voluptatibus!</p>
-    <button id="btn1">Click to change the text of above para</button><br>
+    <link rel="stylesheet" href="Tasks.css" />
+  </head>
+  <body>
+    <p id="task1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
+      incidunt voluptatibus!
+    </p>
+    <button id="btn1">Click to change the text of above para</button><br />
 
-    <img id="chaiCodeImg" src="/chaicode.png" height="500" alt="Double-Click to see the image"><br>
+    <img
+      id="chaiCodeImg"
+      src="/chaicode.png"
+      height="500"
+      alt="Double-Click to see the image"
+    /><br />
     <button id="btn2">Double-Click to hide/show the img</button>
 
     <div id="hoverDiv">Hover me to change my bg color</div>
 
-    <input type="text" id="keyInput" placeholder="Press any key">
-<br>
+    <input type="text" id="keyInput" placeholder="Press any key" />
+    <br />
     <div>
-        <input type="text" id="task6" placeholder="Write something">
-    <p id="para">This is a para.</p>    
+      <input type="text" id="task6" placeholder="Write something" />
+      <p id="para">This is a para.</p>
     </div>
 
     <form id="form">
-        <input type="text" name="username" placeholder="username">
-        <input type="submit" id="submit">
+      <input type="text" name="username" placeholder="username" />
+      <input type="submit" id="submit" />
     </form>
 
     <select name="changeTask" id="change">
-        <option value="First Sentence">First Sentence</option>
-        <option value="Second Sentence">Second Sentence</option>
-        <option value="Third Sentence">Third Sentence</option>
+      <option value="First Sentence">First Sentence</option>
+      <option value="Second Sentence">Second Sentence</option>
+      <option value="Third Sentence">Third Sentence</option>
     </select>
     <p id="selectValue">Select above option to display here.</p>
-</body>
-<script src="/Tasks.js"></script>
+
+    <ul id="list">
+      <li id="js">JavaScript</li>
+      <li id="py">Python</li>
+      <li id="java">Java</li>
+      <li id="dt">Dart</li>
+      <li id="rn">React Native</li>
+    </ul>
+
+    <div id="parent"></div>
+    <button id="addChild">Add Child</button>
+  </body>
+  <script src="/Tasks.js"></script>
 </html>

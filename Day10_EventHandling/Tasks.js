@@ -37,30 +37,38 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Task7
   const form = document.getElementById("form");
-  const username = document.querySelector('input[name="username"]')
+  const username = document.querySelector('input[name="username"]');
   form.addEventListener("submit", (event) => {
     event.preventDefault();
     console.log(`${username.value}`);
   });
 
-// Task8
-const change = document.getElementById('change')
-const paraSelect = document.getElementById('selectValue') 
-change.addEventListener('change', () => {
-  paraSelect.textContent = change.value
-})
+  // Task8
+  const change = document.getElementById("change");
+  const paraSelect = document.getElementById("selectValue");
+  change.addEventListener("change", () => {
+    paraSelect.textContent = change.value;
+  });
 
-// Task9
+  // Task9
+  document.getElementById("list").addEventListener("click", (e) => {
+    console.log(e.target);
+  });
 
+  //Task10
+  const parent = document.getElementById("parent");
+  const addChildBtn = document.getElementById("addChild");
 
+  parent.addEventListener("click", (e) => {
+    if (e.target && e.target.className === "child") {
+      alert("Child element clicked!");
+    }
+  });
 
-
-
-
-
-
-
-
-
-
+  addChildBtn.addEventListener("click", () => {
+    const newChild = document.createElement("div");
+    newChild.className = "child";
+    newChild.textContent = "New Child";
+    parent.appendChild(newChild);
+  });
 });

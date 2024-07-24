@@ -27,16 +27,41 @@ body {
   border-radius: 8px;
 }
 
-#para{
+#para {
   padding: 1rem;
 }
 
-input[name="username"], #submit {
+input[name="username"],
+#submit {
   font-size: 2rem;
 }
 
-#selectValue, #change{
+#selectValue,
+#change {
   margin-top: 2rem;
   padding: 1rem;
+  font-size: 2rem;
+}
+
+#box1 {
+  background-color: grey;
+}
+
+#box2 {
+  background-color: blue;
+}
+
+#box3 {
+  background-color: blueviolet;
+}
+
+.box {
+  min-width: 100px;
+  min-height: 100px;
+  padding: 30px;
+  border: 1px solid black;
+}
+
+#addChild {
   font-size: 2rem;
 }
