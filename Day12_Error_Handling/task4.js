@@ -1,23 +1,18 @@
-// CustomError class that extends the built-in Error class
-class CustomError extends Error {
-    constructor(message) {
-        super(message);
-        this.name = "CustomError";
-    }
+class MyCustomError extends Error {
+  constructor(message) {
+    super(message);
+    this.name = "MyCustomError";
+  }
 }
 
-// Function that throws an instance of the custom error
-function throwError() {
-    throw new CustomError("This is a custom error message.");
-}
+const newError = (msg) => {
+  throw new MyCustomError("Hello, This is a Custom Error");
+};
 
-// Handling the custom error using try-catch block
-try {
-    throwError();
-} catch (error) {
-    if (error instanceof CustomError) {
-        console.error(`Caught a custom error: ${error.message}`);
-    } else {
-        console.error(`Caught an unexpected error: ${error.message}`);
-    }
-}
+document.getElementById("btn").addEventListener("click", () => {
+  try {
+    newError()
+  } catch (error) {
+    console.log(`${error.name}: ${error.message}`);
+  }
+});
