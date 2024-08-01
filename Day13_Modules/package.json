@@ -1,0 +1,18 @@
+{
+  "name": "30_days_javascript",
+  "version": "1.0.0",
+  "description": "A project for 30 Days of JavaScript challenge",
+  "main": "task1.js",
+  "type": "module",
+  "scripts": {
+    "start": "node task1.js",
+    "task1": "node task1.js",
+    "task2": "node task2.js",
+    "task3": "node task3.js",
+    "task4": "node task4.js",
+    "task5": "node task5.js",
+    "task6": "node task6.js",
+    "task7": "node task7.js",
+    "task8": "node task8.js"
+  }
+}
